@@ -22,6 +22,16 @@ Grey dark 3: #999
   padding: 0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #eb2f64;
 }
