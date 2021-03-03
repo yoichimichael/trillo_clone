@@ -30,6 +30,7 @@ Grey dark 3: #999
 
 html {
   box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px; 10px / 16px (browser default) = 62.5%
 }
 
 body {
