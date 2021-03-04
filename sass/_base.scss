@@ -1,23 +1,25 @@
 /*
 COLORS
 
-Grey light 1: #faf9f9
-Grey light 2: #f4f2f2
-Grey light 3: #f0eeee
-Grey light 4: #ccc
-
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
-
 */
 
 // like the html selector with higher specificity
 // put CSS variables here to be accessible by entire document
 :root {
+
   --color-primary: #eb2f64;
   --color-primary-light: #FF3366; 
   --color-primary-dark: #BA265D; 
+
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
 }
 
 
@@ -29,16 +31,31 @@ Grey dark 3: #999
 *,
 *::before,
 *::after {
+  // everything will inherit 'border-box' as the value for the box-sizing property assigned within the html selector
   box-sizing: inherit;
 }
 
+// 
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px; 10px / 16px (browser default) = 62.5%
 }
 
 body {
+  // Open Sans is coming from google fonts
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
+  color: var(--color-grey-dark-2);
+  background-image: 
+    linear-gradient(
+      to right bottom, 
+      var(--color-primary-light), 
+      var(--color-primary-dark)
+    )
+  ;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
 }
