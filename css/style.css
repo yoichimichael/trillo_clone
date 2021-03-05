@@ -62,5 +62,25 @@ body {
   background-color: orangered;
   flex: 1; }
 
+/*
+------------------
+       LOGO
+------------------
+*/
 .logo {
   height: 3.25rem; }
+
+/*
+------------------
+       SEARCH
+------------------
+*/
+.search__icon {
+  height: 2rem;
+  width: 2rem; }
+
+/*
+------------------
+       USER NAV
+------------------
+*/
