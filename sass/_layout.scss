@@ -14,6 +14,9 @@
   border-bottom: var(--color-grey-light-2);
 
   display: flex;
+  // aligns header elements along main axis 
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content {
