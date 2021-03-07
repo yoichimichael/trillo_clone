@@ -48,7 +48,8 @@ body {
 .header {
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2); }
+  border-bottom: var(--color-grey-light-2);
+  display: flex; }
 
 .content {
   display: flex; }
@@ -75,19 +76,22 @@ body {
        SEARCH
 ------------------
 */
-.search__icon {
-  height: 2rem;
-  width: 2rem; }
+.search {
+  background-color: orangered; }
+  .search__icon {
+    height: 2rem;
+    width: 2rem; }
 
 /*
 ------------------
        USER NAV
 ------------------
 */
-.user-nav__icon {
-  height: 2.25rem;
-  width: 2.25rem; }
-
-.user-nav__user-photo {
-  height: 3.75rem;
-  border-radius: 50%; }
+.user-nav {
+  background-color: greenyellow; }
+  .user-nav__icon {
+    height: 2.25rem;
+    width: 2.25rem; }
+  .user-nav__user-photo {
+    height: 3.75rem;
+    border-radius: 50%; }
