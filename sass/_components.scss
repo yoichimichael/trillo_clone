@@ -92,6 +92,9 @@
     padding: 0 2rem;
     cursor: pointer;
     height: 100%;
+    display: flex;
+    // aligns icon items in center of this container
+    align-items: center;
   }
 
   & > *:hover {
@@ -99,9 +102,7 @@
   }
 
   &__icon-box {
-    display: flex;
-    // aligns icon items in center of this container
-    align-items: center;
+    
   }
 
   &__icon {
