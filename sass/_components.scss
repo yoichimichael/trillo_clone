@@ -146,7 +146,19 @@
   margin-top: 3.5rem;
 
   &__item {
+    position: relative;
+  }
 
+  &__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    // this will be the same height as the list item element, not the parent unordered list element 
+    height: 100%;
+    width: 3px;
+    background-color: var(--color-primary);
   }
 
   &__link:link,
