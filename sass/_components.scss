@@ -147,6 +147,11 @@
 
   &__item {
     position: relative;
+
+    // adds styling to all but the last child
+    &:not(:last-child) {
+      margin-bottom: .5rem;
+    }
   }
 
   &__item::before {
@@ -159,6 +164,18 @@
     height: 100%;
     width: 3px;
     background-color: var(--color-primary);
+    transform: scaleY(0);
+    transition: 
+      transform .2s,
+      width .4s cubic-bezier(1,0,0,1) .2s
+    ;
+  }
+
+
+  &__item:hover::before,
+  &__item--active::before {
+    transform: scaleY(1);
+    width: 100%;
   }
 
   &__link:link,
@@ -168,6 +185,10 @@
     text-transform: uppercase;
     display: block;
     padding: 1.5rem 3rem;
+
+    // z-indez only works with a specified position
+    position: relative;
+    z-index: 10;
 
     display: flex;
     align-items: center;
