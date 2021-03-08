@@ -41,6 +41,7 @@
       background-color: var(--color-grey-light-3);
     }
 
+    // changes placeholder texts
     &::-webkit-input-placeholder {
       font-weight: 100;
       color: var(--color-grey-light-4);
@@ -80,8 +81,27 @@
 
 .user-nav {
   background-color: greenyellow;
-  &__icon-box {
+  // overrides "center" setting in flex container in order to fill the height of the header space
+  align-self: stretch;
 
+  display: flex;
+  align-items: center;
+
+  // all direct children of user-nav 
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+  }
+
+  & > *:hover {
+    background-color: var(--color-grey-light-2);
+  }
+
+  &__icon-box {
+    display: flex;
+    // aligns icon items in center of this container
+    align-items: center;
   }
 
   &__icon {

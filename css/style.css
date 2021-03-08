@@ -123,7 +123,19 @@ body {
 ------------------
 */
 .user-nav {
-  background-color: greenyellow; }
+  background-color: greenyellow;
+  align-self: stretch;
+  display: flex;
+  align-items: center; }
+  .user-nav > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%; }
+  .user-nav > *:hover {
+    background-color: var(--color-grey-light-2); }
+  .user-nav__icon-box {
+    display: flex;
+    align-items: center; }
   .user-nav__icon {
     height: 2.25rem;
     width: 2.25rem; }
