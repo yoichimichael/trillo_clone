@@ -167,7 +167,8 @@
     transform: scaleY(0);
     transition: 
       transform .2s,
-      width .4s cubic-bezier(1,0,0,1) .2s
+      width .4s cubic-bezier(1,0,0,1) .2s,
+      background-color .1s
     ;
   }
 
@@ -176,6 +177,11 @@
   &__item--active::before {
     transform: scaleY(1);
     width: 100%;
+  }
+
+  // when a list item is clicked
+  &__item:active::before {
+    background-color: var(--color-primary-light);
   }
 
   &__link:link,
