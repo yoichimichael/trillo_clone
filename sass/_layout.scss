@@ -53,7 +53,9 @@
 }
 
 .description {
-  background-color: orangered;
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
   // i.e. don't grow or shrink, size should be 60% of container 
   flex: 0 0 60%;
   margin-right: 4.5rem;
