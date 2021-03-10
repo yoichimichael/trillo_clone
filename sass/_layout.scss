@@ -37,10 +37,6 @@
 .hotel-view {
   background-color: #fff;
 
-  // following two properties are for testing
-  
-  height: 80rem;
-
   //since the nav ("sidebar") element's flex basis is set to 18%, the below setting makes this element, a sibling of nav, expand to fit the rest of the container
   flex: 1;
 }
@@ -53,6 +49,7 @@
 }
 
 .description {
+  font-size: 1.4rem;
   background-color: #fff;
   box-shadow: var(--shadow-light);
   padding: 3rem;

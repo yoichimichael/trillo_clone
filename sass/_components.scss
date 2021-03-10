@@ -249,7 +249,7 @@
 
   display: flex;
   align-items: center;
-  border-bottom: --line;
+  border-bottom: var(--line);
 
   &__heading {
     font-size: 2.25rem;
@@ -356,3 +356,63 @@
     box-shadow: none;
   }
 }
+
+/*
+----------------------
+      PARAGRAPH
+----------------------
+*/
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+
+/*
+----------------------
+        LIST
+----------------------
+*/
+
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: var(--line);
+  border-bottom: var(--line);
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex: 0 0 50%;
+    margin-bottom: .7rem;
+  }
+
+  &__item::before {
+    // always have to specify content for ::before and ::after pseudo elements
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: .7rem;
+
+    // for older browsers
+    // background-image: url(../img/chevron-thin-right.svg);
+    // background-size: cover;
+
+    // newer browsers - masks
+    background-color: var(--color-primary);
+    -webkit-mask-image: url(../img/chevron-thin-right.svg);
+    mask-image: url(../img/chevron-thin-right.svg);
+    // this property fits the mask to the size of the pseudoelement specified above
+    -webkit-mask-size: cover;
+    mask-size: cover;
+  }
+}
+
+/*
+----------------------
+      RECOMMEND
+----------------------
+*/
