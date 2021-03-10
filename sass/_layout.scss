@@ -12,7 +12,7 @@
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: 1px solid var(--color-grey-light-2);
+  border-bottom: var(--line);
 
   display: flex;
   // aligns header elements along main axis 
@@ -42,5 +42,26 @@
   height: 80rem;
 
   //since the nav ("sidebar") element's flex basis is set to 18%, the below setting makes this element, a sibling of nav, expand to fit the rest of the container
+  flex: 1;
+}
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+}
+
+.description {
+  background-color: orangered;
+  // i.e. don't grow or shrink, size should be 60% of container 
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+
+}
+
+.user-reviews {
+  background-color: yellowgreen;
+  // grow to fit the available space
   flex: 1;
 }
