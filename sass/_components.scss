@@ -416,3 +416,38 @@
       RECOMMEND
 ----------------------
 */
+
+.recommend {
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+
+  display: flex;
+  align-items: center;
+
+  // the "margin-right: auto;" setting in &__count below does the same thing
+  // justify-content: space-between;
+
+  &__count {
+    
+    // can also be accomplished with 'justify-content: space-between;' set on the container 
+    margin-right: auto;
+  }
+
+  &__friends {
+
+  }
+
+  &__photo {
+    // allows inclusion of border to not shrink the photos
+    box-sizing: content-box;
+
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid #fff;
+
+    &:not(:last-child){
+      margin-right: -1.5rem;
+    }
+  }
+}
