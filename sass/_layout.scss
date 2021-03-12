@@ -63,4 +63,8 @@
 .user-reviews {
   // grow to fit the available space
   flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
