@@ -466,12 +466,12 @@
   margin-bottom: 3.5rem;
 
   &__text {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   &__user {
     display: flex;
-    // align-content: center;
+    align-items: center;
   }
 
   &__photo {
@@ -486,16 +486,21 @@
   }
 
   &__user-name {
-    
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: .4rem;
   }
 
   &__user-date {
-    
+    font-size: 1rem;
+    color: var(--color-grey-dark-3);
   }
 
   &__rating {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-weight: 300;
     color: var(--color-primary);
-    margin: auto 0;
+    
   }
 }
