@@ -71,13 +71,13 @@ body {
   flex: 1; }
 
 .detail {
+  font-size: 1.4rem;
   display: flex;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line); }
 
 .description {
-  font-size: 1.4rem;
   background-color: #fff;
   box-shadow: var(--shadow-light);
   padding: 3rem;
@@ -384,3 +384,12 @@ body {
       REVIEWS
 ----------------------
 */
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem; }
+  .review__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%; }
