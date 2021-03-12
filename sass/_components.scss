@@ -565,18 +565,39 @@
   position: relative;
   overflow: hidden;
 
-  &__visible {
+  & > * {
     display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all .2s;
+  }
+
+  &__visible {
     padding: 2rem 7.5rem;
   }
 
   &__invisible {
-    display: inline-block;
     position: absolute;
     padding: 2rem 0;
-    height: 100%;
-    width: 100%;
     left: 0;
     top: -100%;
+  }
+
+  &:hover {
+
+    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+
+    .btn__visible {
+      transform: translateY(100%);
+    }
+
+    .btn__invisible {
+      top: 0;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
   }
 }
