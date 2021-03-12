@@ -85,7 +85,6 @@ body {
   margin-right: 4.5rem; }
 
 .user-reviews {
-  background-color: yellowgreen;
   flex: 1; }
 
 /*
@@ -379,3 +378,9 @@ body {
     border: 3px solid #fff; }
     .recommend__photo:not(:last-child) {
       margin-right: -1.5rem; }
+
+/*
+----------------------
+      REVIEWS
+----------------------
+*/
