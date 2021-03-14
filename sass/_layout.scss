@@ -57,6 +57,10 @@
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
+
+  @media only screen and (max-width: $bp-medium){
+    padding: 3rem;
+  }
 }
 
 .description {
@@ -67,6 +71,11 @@
   // i.e. don't grow or shrink, size should be 60% of container 
   flex: 0 0 60%;
   margin-right: 4.5rem;
+
+  @media only screen and (max-width: $bp-medium){
+    padding: 2rem;
+    margin-right: 3rem; 
+  }
 
 }
 
