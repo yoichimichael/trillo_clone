@@ -27,6 +27,9 @@ COLORS
 
 }
 
+$bp-largest: 75em; // 1200px / 16 = 75
+$bp-large: 68.75em; // 1100px / 16 = 68.75
+
 
 * {
   margin: 0;
@@ -44,6 +47,10 @@ COLORS
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px; 10px / 16px (browser default) = 62.5%
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%; // 1rem = 8px; 8 (desired size) / 16px (browser default) = 50%
+  }
 }
 
 body {
