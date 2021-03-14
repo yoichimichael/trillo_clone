@@ -145,12 +145,21 @@
   list-style: none;
   margin-top: 3.5rem;
 
+  @media only screen and (max-width: $bp-medium){
+    display: flex;
+    margin: 0;
+  }
+
   &__item {
     position: relative;
 
     // adds styling to all but the last child
     &:not(:last-child) {
       margin-bottom: .5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium){
+      flex: 1;
     }
   }
 
@@ -221,6 +230,9 @@
   text-align: center;
   padding: 2.5rem;
 
+  @media only screen and (max-width: $bp-medium){
+    display: none;
+  }
 }
 
 /*
@@ -456,7 +468,7 @@
     border: 3px solid #fff;
 
     &:not(:last-child){
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
   }
 }
